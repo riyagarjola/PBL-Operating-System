@@ -5,10 +5,10 @@ A simple memory allocator built from scratch to simulate dynamic memory manageme
 ## 🚀 Features
 
 - Manual memory allocation and deallocation (`malloc`, `free` simulation)
-- Supports **First Fit**, **Best Fit**, and **Worst Fit** strategies
-- Memory block splitting and merging (coalescing) on deallocation
+- Supports **First Fit**, **Best Fit**, and **Worst Fit** strategies.
+- Memory block splitting and merging (coalescing) on deallocation.
 - Basic error handling (out-of-memory, invalid free, etc.)
-- Simple console interface to interact and test allocator
+- Simple console interface to interact and test allocator.
 
 ## 🛠️ Technologies Used
 
@@ -47,6 +47,7 @@ Allocated at address: 1024
 
 Freeing address: 1024
 Memory successfully deallocated.
+
 
 
 
