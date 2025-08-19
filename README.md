@@ -12,21 +12,10 @@ A simple memory allocator built from scratch to simulate dynamic memory manageme
 
 ## 🛠️ Technologies Used
 
-- Language: C / C++ / Python (Update accordingly)
+- Language: C / C++ / Python
 - OS Concepts: Heap management, fragmentation, pointers, linked lists
 - Tools: GCC / Clang / GDB for debugging
 
-## 📁 Project Structure
-memory-allocator/
-│
-├── src/
-│ ├── allocator.c # Core allocation logic
-│ ├── allocator.h # Header file with function declarations
-│ └── main.c # Sample driver code / test suite
-│
-├── README.md # You're reading it
-├── Makefile # (Optional) Build instructions
-└── LICENSE # (Optional) Licensing info
 
 ## ⚙️ How It Works
 
@@ -34,19 +23,6 @@ memory-allocator/
 2. Memory is divided into blocks, each with a header containing metadata (size, status, next).
 3. Allocation searches the list for a suitable block using the selected strategy.
 4. Deallocation marks the block as free and coalesces adjacent free blocks to prevent fragmentation.
-
-## 📦 Usage
-
-### Compilation (C Example)
-
-```bash
-gcc -o allocator src/*.c
-./allocator
-Allocating 64 bytes...
-Allocated at address: 1024
-
-Freeing address: 1024
-Memory successfully deallocated.
 
 
 
