@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Allocation Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Allocation Simulator</h1>
+        <div class="main-grid">
+            <div class="canvas-container">
+                <canvas id="memory-canvas" width="200" height="600"></canvas>
+            </div>
+            
+            <div class="card current-process-card">
+                <h2>Current Process</h2>
+                <ul id="current-process-list"></ul>
+            </div>
+            
+            <div class="card process-input-card">
+                <h2>Process Size</h2>
+                <input type="text" id="entry-process-size" placeholder="e.g., 23">
+                <button id="push-button">Push</button>
+            </div>
+            
+            <div class="card task-list-card">
+                <h2>Task List</h2>
+                <ul id="task-list"></ul>
+            </div>
+            
+            <div class="card control-card">
+                <h2>Control</h2>
+                <select id="algorithm-select">
+                    <option value="First Fit">First Fit</option>
+                    <option value="Best Fit">Best Fit</option>
+                    <option value="Worst Fit">Worst Fit</option>
+                </select>
+                <button id="allocate-button">Allocate</button>
+            </div>
+            
+            <div class="card config-card">
+                <h2>Memory Configuration</h2>
+                <label>Memory Size:</label>
+                <input type="text" id="memory-size-var" placeholder="e.g., 280">
+                <label>Partition Sizes:</label>
+                <input type="text" id="partition-var" placeholder="e.g., 100 140 40">
+                <button id="update-button">Update</button>
+                <button id="demo-button">Demo</button>
+                <button id="reset-button">Reset</button>
+            </div>
+            
+            <div class="card log-card">
+                <h2>Log</h2>
+                <textarea id="log-text" rows="10" cols="50" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
